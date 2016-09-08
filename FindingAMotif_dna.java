@@ -1,16 +1,14 @@
 import java.io.*;                                                               
 public class findingamotifindnatest5{
 public static void main(String[] args)throws IOException{
-FileReader f =new FileReader("/home/administrator/下载/rosalind_subs.txt");
+FileReader f =new FileReader("/home/administrator/下载/subs.txt");
 BufferedReader br =new BufferedReader(f);
-int i=0,n=0,m=0,j=0; 
+int n=0,j=0; 
 String str1=br.readLine();
 String str2=br.readLine();
 
 n=str1.indexOf(str2);
-System.out.print(n+"\n");
-System.out.print(n+1 + "a");
-
+System.out.print(n+1 + " ");
 
 while(n!=-1){
 n=str1.indexOf(str2, n+1);
